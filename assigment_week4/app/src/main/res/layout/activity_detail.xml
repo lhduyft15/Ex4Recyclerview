@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#212121"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="25dp"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/colorPrimary"
+                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Headline"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:titleEnabled="false">
+
+            <ImageView
+                    android:id="@+id/ivBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hellboy"
+                    app:layout_collapseMode="parallax"/>
+
+
+            <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" app:srcCompat="@android:drawable/ic_media_play"
+                    android:id="@+id/ivPlay"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="65dp"
+            />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_marginTop="280dp"
+                      android:layout_marginLeft="10dp"
+                      tools:text="Hellboy"
+                      android:textSize="25dp"
+                      android:textColor="#FAFAFA"
+                      android:id="@+id/tvName"
+                      android:layout_height="wrap_content"/>
+
+            <RatingBar android:layout_width="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="340dp"
+                       android:id="@+id/rb"
+                       android:layout_height="50dp"/>
+
+            <TextView
+
+                    android:layout_width="wrap_content"
+                    tools:text="Release Date"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"
+                    android:id="@+id/tvReleaseDate"
+                    android:layout_marginTop="320dp"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+
+                    android:layout_width="wrap_content"
+                    tools:text="Hellboy comes to England, where he must defeat Nimue, Merlin's consort and the Blood Queen. But their battle will bring about the end of the world, a fate he desperately tries to turn away."
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#9E9E9E"
+                    android:textStyle="bold"
+                    android:id="@+id/tvOverviewDetail"
+                    android:layout_marginTop="400dp"
+                    android:layout_height="wrap_content"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
